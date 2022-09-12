@@ -11,7 +11,7 @@ import sk.sandeep.shopappandroid.R
 import sk.sandeep.shopappandroid.databinding.ActivitySplashBinding
 
 class SplashyActivity : AppCompatActivity() {
-    private val coroutineScope = lifecycleScope
+    private val coroutineLifecycleScope = lifecycleScope
     private lateinit var binding: ActivitySplashBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,14 +24,14 @@ class SplashyActivity : AppCompatActivity() {
     }
 
     private fun runWait() {
-        coroutineScope.launch {
+        coroutineLifecycleScope.launch {
             wait()
         }
     }
 
     private suspend fun wait() {
         delay(2000L)
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
         finish()
     }

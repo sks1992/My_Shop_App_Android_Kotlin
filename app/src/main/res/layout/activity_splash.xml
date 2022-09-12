@@ -9,7 +9,7 @@
         android:background="@drawable/background_image"
         tools:context=".view.activity.SplashActivity">
 
-        <sk.sandeep.shopappandroid.util.MSPTextViewBold
+        <sk.sandeep.shopappandroid.util.MSTextViewBold
             android:id="@+id/tv_app_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

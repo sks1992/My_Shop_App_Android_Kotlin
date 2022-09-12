@@ -7,5 +7,20 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="color_primary">#ED2173</color>
+    <color name="color_primary_dark">#222934</color>
+    <color name="color_accent">#ED2173</color>
+
+
+    <color name="color_theme_pink">#ED2173</color>
+    <color name="color_theme_orange">#F4442d</color>
+    <color name="color_primary_text">#222943</color>
+    <color name="color_secondary_text">#989898</color>
+
+
     <color name="splash_screen_text_color">#FF03DAC5</color>
+    <color name="colorSnackBarSuccess">#8BC34A</color>
+    <color name="colorSnackBarError">#F72400</color>
+
 </resources>

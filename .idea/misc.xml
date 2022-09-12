@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/drawable-v24/ic_black_color_back_24dp.xml" value="0.1" />
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/drawable/button_background.xml" value="0.1" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/font/font_montserrat.xml" value="0.1" />
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout-v23/activity_login.xml" value="0.29322916666666665" />
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout-v23/activity_register.xml" value="0.29322916666666665" />
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/activity_base.xml" value="0.29322916666666665" />
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/activity_login.xml" value="0.29322916666666665" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/activity_main.xml" value="0.18425925925925926" />
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/activity_register.xml" value="0.29322916666666665" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/activity_splash.xml" value="0.25" />
       </map>
     </option>

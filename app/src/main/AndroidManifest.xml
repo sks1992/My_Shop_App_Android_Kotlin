@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="sk.sandeep.shopappandroid" >
+    package="sk.sandeep.shopappandroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,20 +16,34 @@
         android:theme="@style/Theme.ShopAppAndroid"
         tools:targetApi="s">
         <activity
-            android:name=".view.activity.SplashyActivity"
-            android:theme="@style/Theme.ShopAppAndroid.NoActionBar"
+            android:name=".view.activity.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.RegisterActivity"
+            android:exported="false"
             android:screenOrientation="fullSensor"
-            android:exported="true">
+            android:theme="@style/Theme.ShopAppAndroid.NoActionBar" />
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.ShopAppAndroid.NoActionBar" />
+        <activity
+            android:name=".view.activity.SplashyActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.ShopAppAndroid.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".view.activity.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.ShopAppAndroid.NoActionBar" />
     </application>
 
 </manifest>
