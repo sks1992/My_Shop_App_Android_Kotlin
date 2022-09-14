@@ -101,11 +101,15 @@ class RegisterActivity : BaseActivity() {
     private fun registerUser() {
         //check with validate function if the entries are valid or not
         if (validateRegisterDetails()) {
+
+            showProgressDialog(resources.getString(R.string.please_wait))
             val email: String = binding.etEmail.text.toString().trim { it <= ' ' }
             val password: String = binding.etPassword.text.toString().trim { it <= ' ' }
 
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
+
+                    hideProgressDialog()
                     if (task.isSuccessful) {
                         val firebaseUser: FirebaseUser = task.result!!.user!!
                         showErrorSnackBar(
@@ -113,13 +117,15 @@ class RegisterActivity : BaseActivity() {
                                 firebaseUser.uid
                             }", false
                         )
+                        FirebaseAuth.getInstance().signOut()
+                        finish()
+
                     } else {
                         showErrorSnackBar(
                             task.exception!!.message.toString(), true
                         )
                     }
                 }
-
         }
     }
 }

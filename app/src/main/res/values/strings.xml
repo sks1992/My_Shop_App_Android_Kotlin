@@ -35,4 +35,6 @@ I Agree To The
     <string name="err_msg_agree_terms_and_condition">Please agree terms and condition.</string>
     <string name="my_shop">Ritz\'s Shop</string>
     <!-- END -->
+
+    <string name="please_wait">Please Wait&#8230;</string>
 </resources>
