@@ -1,6 +1,5 @@
 package sk.sandeep.shopappandroid.view.activity
 
-import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import androidx.databinding.DataBindingUtil
@@ -18,8 +17,7 @@ class RegisterActivity : BaseActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_register)
         setUpActionBar()
         binding.tvLogin.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
+            onBackPressed()
         }
         binding.btnRegister.setOnClickListener {
             registerUser()

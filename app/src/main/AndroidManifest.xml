@@ -16,6 +16,11 @@
         android:theme="@style/Theme.ShopAppAndroid"
         tools:targetApi="s">
         <activity
+            android:name=".view.activity.ForgetPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.ShopAppAndroid.NoActionBar"/>
+        <activity
             android:name=".view.activity.BaseActivity"
             android:exported="false" />
         <activity
