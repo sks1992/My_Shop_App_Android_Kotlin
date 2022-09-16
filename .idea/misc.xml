@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/drawable-v24/ic_black_color_back_24dp.xml" value="0.1" />
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/drawable/app_gradient_color_background.xml" value="0.1" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/drawable/button_background.xml" value="0.1" />
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/drawable/drawable_gender_tab_selector.xml" value="0.1" />
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/drawable/drawable_gender_tab_text_color_selector.xml" value="0.1" />
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/drawable/ic_black_color_back_24dp.xml" value="0.1" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/font/font_montserrat.xml" value="0.1" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout-v23/activity_login.xml" value="0.29322916666666665" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout-v23/activity_register.xml" value="0.29322916666666665" />
@@ -12,6 +16,7 @@
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/activity_forget_password.xml" value="0.29322916666666665" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/activity_login.xml" value="0.29322916666666665" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/activity_main.xml" value="0.18425925925925926" />
+        <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/activity_profile.xml" value="0.12962962962962962" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/activity_register.xml" value="0.29322916666666665" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/android_project/ShopAppAndroid/app/src/main/res/layout/dialog_progress.xml" value="0.1574074074074074" />

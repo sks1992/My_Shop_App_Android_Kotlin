@@ -3,11 +3,15 @@ package sk.sandeep.shopappandroid.view.activity
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.View
 import androidx.databinding.DataBindingUtil
 import com.google.firebase.auth.FirebaseAuth
 import sk.sandeep.shopappandroid.R
 import sk.sandeep.shopappandroid.databinding.ActivityLoginBinding
+import sk.sandeep.shopappandroid.firestore.FirestoreClass
+import sk.sandeep.shopappandroid.models.User
+import sk.sandeep.shopappandroid.util.Constants
 
 class LoginActivity : BaseActivity(), View.OnClickListener {
 
@@ -80,13 +84,42 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
                     // Hide the progress dialog
-                    hideProgressDialog()
+                    //hideProgressDialog()
                     if (task.isSuccessful) {
-                        showErrorSnackBar("You are logged in successfully.", false)
+                        FirestoreClass().getUserDetails(this@LoginActivity)
+                        //showErrorSnackBar("You are logged in successfully.", false)
                     } else {
+                        hideProgressDialog()
                         showErrorSnackBar(task.exception!!.message.toString(), true)
                     }
                 }
         }
+    }
+
+    /**
+     * A function to notify user that logged in success and get the user details from the FireStore database after authentication.
+     */
+    fun userLoggedInSuccess(user: User) {
+
+        // Hide the progress dialog.
+        hideProgressDialog()
+
+        // Print the user details in the log as of now.
+        Log.i("First Name: ", user.firstName)
+        Log.i("Last Name: ", user.lastName)
+        Log.i("Email: ", user.email)
+
+
+        if (user.profileCompleted == 0) {
+            // Redirect the user to Main Screen after log in.
+            val intent =Intent(this, ProfileActivity::class.java)
+            intent.putExtra(Constants.EXTRA_USER_DETAIL, user)
+            startActivity(intent)
+        } else {
+            val intent =Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        finish()
     }
 }
